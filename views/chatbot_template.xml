@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="ollama_chatbot_interface" inherit_id="web.layout">
+        
+        <xpath expr="//body" position="inside">
+            
+            <div id="ollama_chatbox">
+                <div id="ollama_chat_messages">
+                    <div style="padding:10px; color:#666; font-style:italic;">
+                        Chatbot đã sẵn sàng...
+                    </div>
+                </div>
+                
+                <div style="display: flex;">
+                    <input type="text" id="ollama_chat_input" placeholder="Nhập tin nhắn..." />
+                    <button id="ollama_chat_send">Gửi</button>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+</odoo>
